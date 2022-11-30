@@ -1,16 +1,16 @@
-.. roiti-gie documentation master file, created by
-   sphinx-quickstart on Sun Jun 19 12:32:16 2022.
+.. Roiti GIE documentation master file, created by
+   sphinx-quickstart on Wed Nov 30 18:22:48 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to roiti-gie's documentation!
-===================================
+Welcome to Roiti GIE's documentation!
+=====================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents:
 
-   modules   
+   modules
 
 Indices and tables
 ==================

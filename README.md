@@ -4,7 +4,7 @@ Python client for the ALSI/AGSI APIs
 
 Documentation of the API can be found on [GIE's website](https://www.gie.eu/transparency-platform/GIE_API_documentation_v007.pdf)
 
-Documentation of the client API can be found on: <https://petrofff93.github.io/agsi-py/>
+Documentation of the client API can be found on: <https://roiti-ltd.github.io/gie-py/>
 
 ### Installation
 
