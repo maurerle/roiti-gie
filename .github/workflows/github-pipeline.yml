@@ -37,7 +37,7 @@ jobs:
 
       - name: Run Unit Tests
         run: |
-          export API_KEY=${{ secrets.API_KEY }} &&
+          export API_KEY=${{ secrets.GIE_API_KEY }} &&
           python -m pip install -e . &&
           python -m pytest ./tests --import-mode=append --cov
 
