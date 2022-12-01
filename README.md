@@ -135,3 +135,9 @@ Bumping the package version after making changes:
 ```sh
 bumpversion major|minor|patch|build
 ```
+
+### Aknowledgements
+
+- Many thanks to the [entsoe-py](https://github.com/EnergieID/entsoe-py) library for serving as inspiration for this library.
+
+- [Frank Boerman](https://github.com/fboerman) and his [GIE repository](https://github.com/fboerman/gie-py), from which we copied the lookup function ideas.
