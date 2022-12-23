@@ -1,4 +1,5 @@
 import asyncio
+import sys
 
 import pytest
 import pytest_asyncio
@@ -26,7 +27,11 @@ class TestRawGieClient:
     @pytest_asyncio.fixture(scope="class")
     def event_loop(self):
         # On Windows we need to set the event loop policy in order to avoid loop error
-        # asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+        if sys.platform == "win32":
+            # On Windows we need to set the event loop policy in order to avoid loop error
+            asyncio.set_event_loop_policy(
+                asyncio.WindowsSelectorEventLoopPolicy()
+            )
         loop = asyncio.get_event_loop_policy().new_event_loop()
         yield loop
         loop.close()
