@@ -72,9 +72,9 @@ class GiePandasClient(GieRawClient):
                     df[col] = pd.to_datetime(df[col], errors="coerce")
 
         if float_cols is not None:
-            df_cols = [x for x in float_cols if x in df.columns]
-            if df_cols:
-                df[df_cols] = df[df_cols].astype("float", errors="ignore")
+            for col in df.columns:
+                if col in float_cols:
+                    df[col] = pd.to_numeric(df[col], errors="coerce")
 
         return df
 
