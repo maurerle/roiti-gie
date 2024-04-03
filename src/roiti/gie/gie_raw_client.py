@@ -205,7 +205,7 @@ class GieRawClient:
 
         self._logger.info("Query ALSI COUNTRY STORAGE started..")
         return await self.fetch(
-            APIType.AGSI,
+            APIType.ALSI,
             params=params,
             start=start,
             end=end,
